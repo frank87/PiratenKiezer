@@ -85,7 +85,7 @@
 ?>
 <table border=1 >
 <tr><th>
-<a href="<?php echo $_SERVER['REQUEST_URI']; ?>">opnieuw</a>
+<a href="<?php remove_query_arg('pkw_action'); ?>">opnieuw</a>
 </th><th>Stelling</th><th>eens</th><th>oneens</th></tr>
 <?php
 	if ( isset( $_GET['pkw_action'] )  ) {
