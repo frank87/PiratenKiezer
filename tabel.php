@@ -84,7 +84,9 @@
 	echo $qtext->text;
 ?>
 <table border=1 >
-<tr><th></th><th>Stelling</th><th>eens</th><th>oneens</th></tr>
+<tr><th>
+<a href="<?php echo $_SERVER['REQUEST_URI']; ?>">opnieuw</a>
+</th><th>Stelling</th><th>eens</th><th>oneens</th></tr>
 <?php
 	if ( isset( $_GET['pkw_action'] )  ) {
 		$tid = $_GET['pkw_tid'];
