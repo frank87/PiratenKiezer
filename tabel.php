@@ -22,8 +22,16 @@
 			echo '<td>XXX</td>';
 		} else { 
 			echo '<td><a href="';
-			echo add_query_arg( array( 'pkw_action' => 'next',
-						   'pkw_tid' => $no ) );
+			if ( $no > 0 ) {
+				echo add_query_arg( array( 'pkw_action' => 'next',
+							   'pkw_tid' => $no ) );
+			} else {
+				echo add_query_arg( array(
+					'pkw_action' => 'del',
+					'pkw_aid' => $aid,
+					'pkw_tid' => $tid 
+				) );
+			}
 			echo '">...</a></td>';
 		}
 		echo '</tr>';
