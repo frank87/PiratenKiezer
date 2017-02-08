@@ -35,4 +35,11 @@ function ppnl_kieswijzer_register() {
 
 add_action( 'widgets_init', 'ppnl_kieswijzer_register' );
 register_activation_hook( __FILE__, 'ppnlkw_install' );
+
+function KiesHulpTabel( $atts, $content, $tag )
+{
+require __DIR__."/tabel.php";
+}
+
+add_shortcode( 'KiesHulp', 'kiesHulpTabel' )
 ?>

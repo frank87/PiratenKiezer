@@ -93,10 +93,10 @@
 ?>
 <table border=1 >
 <tr><th>
-<a href="<?php remove_query_arg('pkw_action'); ?>">opnieuw</a>
+<a href="<?php echo remove_query_arg(  'pkw_action' ); ?>">opnieuw</a>
 </th><th>Stelling</th><th>eens</th><th>oneens</th></tr>
 <?php
-	if ( isset( $_GET['pkw_action'] )  ) {
+	if ( isset( $_GET['pkw_action'] ) and $_GET['pkw_action'] !== 'restart' ) {
 		$tid = $_GET['pkw_tid'];
 		$action = $_GET['pkw_action'];
 	} else {
