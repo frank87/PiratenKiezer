@@ -106,11 +106,11 @@ ALTER TABLE `wp_pkw_tree_node`
 
 
 ALTER TABLE `wp_pkw_answer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 ALTER TABLE `wp_pkw_argument`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1000;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 ALTER TABLE `wp_pkw_tree_node`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 --
 -- Beperkingen voor tabel `wp_pkw_answer`
 --
@@ -143,35 +143,62 @@ INSERT INTO `wp_pkw_question` (`id`, `text`, `start`) VALUES
 (1, 'Wat zal ik stemmen voor de Tweede Kamer op 15 maart 2017?', 1);
 
 INSERT INTO `wp_pkw_answer` ( id, `question_id`, `text`) VALUES (1, 1, 'Piratenpartij');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'VVD');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'PvdA');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'PVV');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'SP');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'CDA');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'D66');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'ChristenUnie');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'GroenLinks');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'SGP');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Partij voor de Dieren');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, '50PLUS');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Ondernemerspartij');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'VNL Voor Nederland');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'DENK');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Nieuwe Wegen');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Forum voor Democratie');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'De BurgerBeweging');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Vrijzinnige Partij');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'GeenPeil');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Artikel 1');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Niet Stemmers');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Libertarische Partij');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Lokaal in de Kamer');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'JEZUS LEEFT');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'StemNL');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Mens en Spirit / Basisinkomen Partij / V-R');
-INSERT INTO wp_pkw_answer(question_id, text ) VALUES (1, 'Vrije Democratische Partij');
-
-
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (2, 1, 'VVD');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (3, 1, 'PvdA');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (4, 1, 'PVV');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (5, 1, 'SP');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (6, 1, 'CDA');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (7, 1, 'D66');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (8, 1, 'ChristenUnie');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (9, 1, 'GroenLinks');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (0, 1, 'SGP');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (11, 1, 'Partij voor de Dieren');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (12, 1, '50PLUS');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (13, 1, 'Ondernemerspartij');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (14, 1, 'VNL Voor Nederland');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (15, 1, 'DENK');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (16, 1, 'Nieuwe Wegen');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (17, 1, 'Forum voor Democratie');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (18, 1, 'De BurgerBeweging');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (19, 1, 'Vrijzinnige Partij');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (20, 1, 'GeenPeil');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (21, 1, 'Artikel 1');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (22, 1, 'Niet Stemmers');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (23, 1, 'Libertarische Partij');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (24, 1, 'Lokaal in de Kamer');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (25, 1, 'JEZUS LEEFT');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (26, 1, 'StemNL');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (27, 1, 'Mens en Spirit / Basisinkomen Partij / V-R');
+INSERT INTO wp_pkw_answer( id, question_id, text ) VALUES (28, 1, 'Vrije Democratische Partij');
 
 INSERT INTO `wp_pkw_tree_node` (`id`, `answer_id`) VALUES (1, 1);
 INSERT INTO `wp_pkw_tree_node` (`id`, `answer_id`) VALUES (0, 1); -- NULL-value
+INSERT INTO `wp_pkw_tree_node` (`id`, `answer_id`) VALUES (2, 20);
+INSERT INTO `wp_pkw_tree_node` (`id`, `answer_id`) VALUES (3, 20);
+INSERT INTO `wp_pkw_tree_node` (`id`, `answer_id`) VALUES (4, 20);
+INSERT INTO `wp_pkw_tree_node` (`id`, `answer_id`) VALUES (5, 20);
+INSERT INTO `wp_pkw_tree_node` (`id`, `answer_id`) VALUES (6, 14);
+INSERT INTO `wp_pkw_tree_node` (`id`, `answer_id`) VALUES (7, 14);
+INSERT INTO `wp_pkw_tree_node` (`id`, `answer_id`) VALUES (8, 14);
+
+
+INSERT INTO wp_pkw_argument( id, on_yes, on_no, count_yes, count_no, answer_id, text )
+	VALUES ( 1, 2, 0, 0, 1, 1, 'Als kiezer wil ik directe invloed bij beslissingen in de Tweede Kamer - mijn volksvertegenwoordiger zou precies moeten stemmen wat ik wil.' );
+
+INSERT INTO wp_pkw_argument( id, on_yes, on_no, count_yes, count_no, answer_id, text )
+	VALUES ( 1, 3, 0, 0, 1, 1, 'Volksvertegenwoordigers moeten de regering veel meer dan nu nauwlettend controleren bij de uitvoering van haar taken.' );
+
+INSERT INTO wp_pkw_argument( id, on_yes, on_no, count_yes, count_no, answer_id, text )
+	VALUES ( 1, 4, 0, 0, 1, 1, 'Het huidige model van vertegenwoordigende democratie voldoet niet meer aan de moderne eisen.' );
+
+INSERT INTO wp_pkw_argument( id, on_yes, on_no, count_yes, count_no, answer_id, text )
+	VALUES ( 1, 5, 0, 0, 1, 1, 'Politieke vertegenwoordiging zou meer gebruik moeten maken van beschikbare technische en digitale middelen om bestuur dichter bij de burger te brengen.' );
+
+INSERT INTO wp_pkw_argument( id, on_yes, on_no, count_yes, count_no, answer_id, text )
+	VALUES ( 1, 6, 0, 0, 1, 1, 'Er moet één laag belastingtarief komen (vlaktaks), waardoor men meer geld overhoudt in de portemonnee.' );
+
+INSERT INTO wp_pkw_argument( id, on_yes, on_no, count_yes, count_no, answer_id, text )
+	VALUES ( 1, 7, 0, 0, 1, 1, 'Er moet een streng Australisch immigratiebeleid komen, waardoor kansloze immigratie stopt.' );
+
+INSERT INTO wp_pkw_argument( id, on_yes, on_no, count_yes, count_no, answer_id, text )
+	VALUES ( 1, 8, 0, 0, 1, 1, 'De overheid moet zich niet bezighouden met religieuze vorming, dus geen subsidie meer naar onder andere islamitische scholen.' );
